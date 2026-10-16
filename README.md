@@ -1,43 +1,37 @@
-# Responsive Blog Website
+# Viral Blog
 
-Welcome to the **Responsive Blog Website** repository! This project is a fully responsive blog website designed for easy readability and accessibility across all devices.
+A responsive, static blog-style website built with HTML, CSS, and JavaScript. The page includes sample posts and a client-side category filter.
 
 ## Features
-- Fully responsive design
-- Mobile-friendly UI
-- Dynamic blog post sections
-- Interactive navigation menu
-- SEO optimized
-- Easy to customize
+- Responsive blog layout
+- Sample post cards with images
+- Category filters for Tech, Food, News, and All
+- Scroll-aware header styling
+- Local static assets
 
-## Technologies Used
+## Technologies
 - HTML5
-- CSS3 (Flexbox, Grid, Media Queries)
-- JavaScript (for interactivity)
-- Bootstrap (optional, if used)
+- CSS3
+- Vanilla JavaScript
+- jQuery 3.6.1 for post filtering
+- Boxicons and Google Fonts loaded from CDNs
 
-## Setup & Installation
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/blog-website.git
-   ```
-2. **Navigate to the project directory**
-   ```bash
-   cd blog-website
-   ```
-3. **Open the project in a browser**
-   - You can open the `index.html` file directly in your browser.
-   - Alternatively, use a local server for better performance (e.g., Live Server in VS Code).
+## Run locally
+1. Clone this repository: **git clone https://github.com/Vikram2005-byte/Viral-blog.git**
+2. Open the repository folder.
+3. Open **index.html** in a browser, or run **python -m http.server 8000** and visit **http://localhost:8000**.
 
-## Deploying to GitHub Pages
-1. Go to your repository on GitHub.
-2. Navigate to **Settings > Pages**.
-3. Under "Branch," select `main` (or `master` if applicable) and save.
-4. Your site will be live at `https://your-username.github.io/blog-website/`.
+## Project structure
+- **index.html** — page content
+- **style.css** — responsive layout and styling
+- **script.js** — scroll and category-filter behavior
+- **assets/** — images used by the page
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+## Current limitations
+This is a static front-end project. Sign-up, login, and full article pages are not connected to a backend, so those actions are not implemented.
+
+## Deployment
+To publish through GitHub Pages, open the repository's **Settings → Pages**, select the **main** branch and **/(root)**, and save. Once Pages is enabled, the expected URL is **https://Vikram2005-byte.github.io/Viral-blog/**.
 
 ## Contact
-For any issues or improvements, open an issue or reach out to me at [justcode790@gmail.com].
-
+Email: [vadtya123@gmail.com](mailto:vadtya123@gmail.com)
