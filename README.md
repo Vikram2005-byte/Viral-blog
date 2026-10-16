@@ -1,37 +1,35 @@
 # Viral Blog
 
-A responsive, static blog-style website built with HTML, CSS, and JavaScript. The page includes sample posts and a client-side category filter.
+A static blog-style website with a hero section, image cards, and category filters. It is a front-end project for experimenting with a familiar blog layout using HTML, CSS, and JavaScript.
 
-## Features
-- Responsive blog layout
-- Sample post cards with images
-- Category filters for Tech, Food, News, and All
-- Scroll-aware header styling
-- Local static assets
+## What is here
 
-## Technologies
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- jQuery 3.6.1 for post filtering
-- Boxicons and Google Fonts loaded from CDNs
+- A responsive grid of sample posts with images.
+- Filters for Tech, Food, News, and All.
+- A header that changes when you scroll.
+- Local images in `assets/`, plus icons and fonts loaded from CDNs.
 
-## Run locally
-1. Clone this repository: **git clone https://github.com/Vikram2005-byte/Viral-blog.git**
-2. Open the repository folder.
-3. Open **index.html** in a browser, or run **python -m http.server 8000** and visit **http://localhost:8000**.
+The page is a prototype, not a complete publishing platform. Sign-up, login, and individual article pages are not connected to a backend. Treat the post content as sample material.
 
-## Project structure
-- **index.html** — page content
-- **style.css** — responsive layout and styling
-- **script.js** — scroll and category-filter behavior
-- **assets/** — images used by the page
+## Run it locally
 
-## Current limitations
-This is a static front-end project. Sign-up, login, and full article pages are not connected to a backend, so those actions are not implemented.
+Download the repository using **Code → Download ZIP** and extract it, or clone it:
 
-## Deployment
-To publish through GitHub Pages, open the repository's **Settings → Pages**, select the **main** branch and **/(root)**, and save. Once Pages is enabled, the expected URL is **https://Vikram2005-byte.github.io/Viral-blog/**.
+    git clone https://github.com/Vikram2005-byte/Viral-blog.git
 
-## Contact
-Email: [vadtya123@gmail.com](mailto:vadtya123@gmail.com)
+Open `index.html` in a browser. You can also run a simple server from the project folder:
+
+    python -m http.server 8000
+
+Then visit [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+## Project files
+
+- `index.html` — page structure and post cards
+- `style.css` — layout, colours, responsive rules, and scrolling header styles
+- `script.js` — scroll effect and post filtering
+- `assets/` — images used by the page
+
+## Ideas for the next pass
+
+The most useful next improvements would be real article pages, working navigation for account links, and a simple content source so new posts don't need to be copied into the HTML by hand.
