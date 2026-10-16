@@ -563,3 +563,106 @@ footer p{
 
 
 
+
+
+/* Small quality-of-life additions for semantic filters and sample content. */
+.post-filter .filter-item {
+    appearance: none;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-color);
+    font: inherit;
+    line-height: 1.4;
+    padding: 7px 12px;
+    border-radius: 999px;
+}
+
+.post-filter .filter-item:hover {
+    border-color: var(--second-color);
+}
+
+.post-filter .filter-item:focus-visible,
+.login:focus-visible,
+.btn2:focus-visible,
+.sci a:focus-visible,
+.quicklinks a:focus-visible,
+.contactBx a:focus-visible {
+    outline: 3px solid #007b9b;
+    outline-offset: 3px;
+}
+
+.post-filter .filter-item.active-filter {
+    border-color: transparent;
+    background: var(--second-color);
+    color: #102026;
+}
+
+.post-box[hidden],
+.empty-posts[hidden] {
+    display: none !important;
+}
+
+.section-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+    color: #172317;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 0.35rem;
+}
+
+.section-heading p,
+.demo-note {
+    color: #4e565c;
+}
+
+.empty-posts {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.demo-note {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.post-filter {
+    flex-wrap: wrap;
+}
+
+.nav.container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (max-width: 570px) {
+    .post-filter {
+        column-gap: 0.35rem;
+        row-gap: 0.35rem;
+    }
+
+    .post-filter .filter-item {
+        font-size: 0.85rem;
+    }
+
+    .nav .login {
+        display: inline-block;
+        margin-left: 4px;
+        padding: 8px 9px;
+        font-size: 0.75rem;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
