@@ -2,199 +2,203 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trend Blogger</title>
-    <!-- Box-icon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="A personal-style blog layout with sample reads on technology, food, and the stories behind the news.">
+    <meta name="theme-color" content="#1a1e21">
+    <title>Viral Blog — Notes on tech, food and everyday stories</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="nav container">
-            <a href="#" class="logo">Viral  <span> Blog </span></a>
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="logo">Viral <span>Blog</span></a>
             <div class="singin">
-             <a href="#" class="login">Sign Up</a>
-            <a href="#" class="login">Login</a>
+                <a href="#posts" class="login">Explore posts</a>
+                <a href="#about" class="login">About</a>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-text container">
-            <h2 class="home-title">Trend Blogger</h2>
-            <span class="home-subtitle">Your source of great content</span>
-        </div>
-    </section>
+    <main>
+        <section class="home" id="home">
+            <div class="home-text container">
+                <h1 class="home-title">Stories for your next scroll</h1>
+                <p class="home-subtitle">A mix of technology, food, and things worth a closer look.</p>
+            </div>
+        </section>
 
-    <section class="about container" id="about">
-        <div class="contentBx">
-            <h2 class="titleText">Catch up with the trending topics</h2>
-            <p class="title-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos consequuntur voluptate dolorum totam provident ducimus cupiditate dolore doloribus repellat. Saepe ad fugit similique quis quam. Odio suscipit incidunt distinctio.
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis libero pariatur ipsum suscipit voluptates aut, repellendus quos dolor autem, natus laboriosam consectetur maxime cumque, sunt magni optio? Veritatis, ea?
-            </p>
-            <a href="#" class="btn2">Read more</a>
-        </div>
-        <div class="imgBx">
-            <img src="./assets/think.jpg" alt="" class="fitBg">
-        </div>
-    </section>
+        <section class="about container" id="about" aria-labelledby="about-title">
+            <div class="contentBx">
+                <h2 class="titleText" id="about-title">A little curiosity goes a long way</h2>
+                <p class="title-text">
+                    Viral Blog is a small front-end project built around a simple idea: a good blog should make it easy to find something interesting and start reading.
+                    Browse the sample posts by topic, pick up an idea, or use the layout as a starting point for your own publication.
+                </p>
+                <a href="#posts" class="btn2">Browse the posts</a>
+            </div>
+            <div class="imgBx">
+                <img src="./assets/think.jpg" alt="" class="fitBg" loading="lazy">
+            </div>
+        </section>
 
-    <div class="post-filter container">
-        <span class="filter-item active-filter" data-filter="all">All</span>
-        <span class="filter-item" data-filter="tech">Tech</span>
-        <span class="filter-item" data-filter="food">Food</span>
-        <span class="filter-item" data-filter="news">News</span>
-    </div>
-    
-    <div class="post container">
-        <!-- Post 1 -->
-        <div class="post-box tech">
-            <img src="./assets/img1.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
+        <section class="blog-section" id="posts" aria-labelledby="posts-title">
+            <div class="section-heading container">
+                <h2 id="posts-title">Latest reads</h2>
+                <p>Choose a topic to narrow the list.</p>
             </div>
-        </div>
-        <!-- Post 2 -->
-        <div class="post-box food">
-            <img src="./assets/img2.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
+
+            <div class="post-filter container" role="group" aria-label="Filter articles by category">
+                <button type="button" class="filter-item active-filter" data-filter="all" aria-pressed="true">All posts</button>
+                <button type="button" class="filter-item" data-filter="tech" aria-pressed="false">Tech</button>
+                <button type="button" class="filter-item" data-filter="food" aria-pressed="false">Food</button>
+                <button type="button" class="filter-item" data-filter="news" aria-pressed="false">News</button>
             </div>
-        </div>
-        <!-- Post 3 -->
-        <div class="post-box food">
-            <img src="./assets/img3.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
+
+            <div class="post container">
+                <article class="post-box tech">
+                    <img src="./assets/img1.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">Tech</p>
+                    <h3 class="post-title">Small design choices that make a website easier to use</h3>
+                    <span class="post-date">4 min read</span>
+                    <p class="post-description">Clear labels, comfortable spacing, and useful feedback can make a site feel simpler without adding more features.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box food">
+                    <img src="./assets/img2.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">Food</p>
+                    <h3 class="post-title">A weeknight meal built around what is already in the kitchen</h3>
+                    <span class="post-date">3 min read</span>
+                    <p class="post-description">A flexible meal plan starts with a few pantry staples, seasonal vegetables, and a sauce you can make in minutes.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box food">
+                    <img src="./assets/img3.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">Food</p>
+                    <h3 class="post-title">A more relaxed way to plan lunch for a busy week</h3>
+                    <span class="post-date">5 min read</span>
+                    <p class="post-description">Prepare a couple of basics ahead of time, keep the combinations simple, and leave room to change your mind.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box news">
+                    <img src="./assets/img4.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">News</p>
+                    <h3 class="post-title">Before sharing a headline, take a moment to check the source</h3>
+                    <span class="post-date">4 min read</span>
+                    <p class="post-description">Look for the original report, check when it was published, and separate what is confirmed from what is still unclear.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box tech">
+                    <img src="./assets/img5.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">Tech</p>
+                    <h3 class="post-title">Five small browser habits that can save time every day</h3>
+                    <span class="post-date">3 min read</span>
+                    <p class="post-description">A tidy bookmark bar, a few useful shortcuts, and sensible tab habits can make everyday browsing less chaotic.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box news">
+                    <img src="./assets/img8.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">News</p>
+                    <h3 class="post-title">Why local stories deserve more than a quick glance</h3>
+                    <span class="post-date">4 min read</span>
+                    <p class="post-description">Community reporting can explain the decisions, people, and everyday changes that larger headlines often miss.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box tech">
+                    <img src="./assets/img7.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">Tech</p>
+                    <h3 class="post-title">A simple folder structure for keeping a small project organized</h3>
+                    <span class="post-date">5 min read</span>
+                    <p class="post-description">Naming files consistently and keeping assets in one place makes a project easier to return to and share with others.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box news">
+                    <img src="./assets/img4.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">News</p>
+                    <h3 class="post-title">A quick checklist for judging whether an online claim is reliable</h3>
+                    <span class="post-date">6 min read</span>
+                    <p class="post-description">Trace the claim to its source, look for independent confirmation, and be cautious when a post leaves out context.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
+
+                <article class="post-box food">
+                    <img src="./assets/img10.jpg" alt="" class="post-img" loading="lazy">
+                    <p class="category">Food</p>
+                    <h3 class="post-title">Make a simple pantry meal feel a little more special</h3>
+                    <span class="post-date">3 min read</span>
+                    <p class="post-description">Fresh herbs, a squeeze of citrus, toasted spices, or a crunchy topping can bring new life to familiar ingredients.</p>
+                    <div class="profile">
+                        <img src="./assets/profile.jpg" alt="" class="profile-img" loading="lazy">
+                        <span class="profile-name">Vikram Aditya</span>
+                    </div>
+                </article>
             </div>
-        </div>
-        <!-- Post 4 -->
-        <div class="post-box news">
-            <img src="./assets/img4.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
-            </div>
-        </div>
-        <!-- Post 5 -->
-        <div class="post-box tech">
-            <img src="./assets/img5.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
-            </div>
-        </div>
-        <!-- Post 6 -->
-        <div class="post-box news">
-            <img src="./assets/img4.jpg" alt="" class="post-img">
-            <h2 class="category">News</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
-            </div>
-        </div>
-        <!-- Post 7 -->
-        <div class="post-box tech">
-            <img src="./assets/img7.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
-            </div>
-        </div>
-        <!-- Post 8 -->
-        <div class="post-box news">
-            <img src="./assets/img8.jpg" alt="" class="post-img">
-            <h2 class="category">News</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
-            </div>
-        </div>
-        <!-- Post 9 -->
-        <div class="post-box food">
-            <img src="./assets/img10.jpg" alt="" class="post-img">
-            <h2 class="category">FOOD</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">17 Feb 2025</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="" class="profile-img">
-                <span class="profile-name">Vikram Aditya</span>
-            </div>
-        </div>
-    </div>
+            <p id="empty-posts" class="empty-posts container" hidden>No posts in this category yet.</p>
+            <p class="demo-note container">These cards are sample content for a static blog demo. The titles do not link to full articles yet.</p>
+        </section>
+    </main>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container container">
             <div class="sec aboutus">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quisquam minus quo illo numquam vel incidunt pariatur hic commodi expedita tempora praesentium at iure fugiat ea, quam laborum aperiam veritatis.</p>
-                <ul class="sci">
-                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                <h2>About this project</h2>
+                <p>A front-end blog layout made to practise responsive design, category filters, and a clean reading experience. There is no sign-in system or publishing backend.</p>
+                <ul class="sci" aria-label="Social links">
+                    <li><a href="https://github.com/Vikram2005-byte" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="sec quicklinks">
-                <h2>Quick Links</h2>
+                <h2>Explore</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#posts">All posts</a></li>
                 </ul>
             </div>
             <div class="sec contactBx">
-                <h2>Contact Info</h2>
+                <h2>Contact</h2>
                 <ul class="info">
                     <li>
-                        <span><i class='bx bxs-map'></i></span>
-                        <span>Vadlamudi 522213<br>Guntur A.P  <br>India</span>
-                    </li>
-                    <li>
-                        <span><i class='bx bx-envelope' ></i></span>
+                        <span><i class="bx bx-envelope" aria-hidden="true"></i></span>
                         <p><a href="mailto:vadtya123@gmail.com">vadtya123@gmail.com</a></p>
                     </li>
                 </ul>
             </div>
         </div>
+        <p class="copyright">© <span id="current-year">2026</span> Viral Blog. A personal front-end project.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
