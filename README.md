@@ -1,35 +1,36 @@
 # Viral Blog
 
-A static blog-style website with a hero section, image cards, and category filters. It is a front-end project for experimenting with a familiar blog layout using HTML, CSS, and JavaScript.
+Viral Blog is a static blog-style site I use to practise building a clean reading layout with HTML, CSS, and JavaScript. It has a hero section, an introduction, a grid of sample posts, and category filters.
 
-## What is here
+## What works
 
-- A responsive grid of sample posts with images.
-- Filters for Tech, Food, News, and All.
-- A header that changes when you scroll.
-- Local images in `assets/`, plus icons and fonts loaded from CDNs.
+- Browse nine sample cards across Tech, Food, and News.
+- Filter cards by topic using the category buttons.
+- Use the navigation links to move between the top, About, and posts sections.
+- View the layout on desktop or a smaller screen.
+- Load images from the local `assets/` folder.
 
-The page is a prototype, not a complete publishing platform. Sign-up, login, and individual article pages are not connected to a backend. Treat the post content as sample material.
+The cards use original sample titles and summaries to show how an editorial page might read. They are not full articles yet, and the site has no publishing backend, sign-in, or account system. The card titles are intentionally not presented as working article links.
 
 ## Run it locally
 
-Download the repository using **Code → Download ZIP** and extract it, or clone it:
+Download the repository with **Code → Download ZIP** and extract it, or clone it:
 
     git clone https://github.com/Vikram2005-byte/Viral-blog.git
 
-Open `index.html` in a browser. You can also run a simple server from the project folder:
+Open `index.html` in a browser. For a local server, run this command from the project folder:
 
     python -m http.server 8000
 
-Then visit [http://127.0.0.1:8000](http://127.0.0.1:8000).
+Then visit [http://127.0.0.1:8000](http://127.0.0.1:8000). Keep the terminal window open while using the site.
 
 ## Project files
 
-- `index.html` — page structure and post cards
-- `style.css` — layout, colours, responsive rules, and scrolling header styles
-- `script.js` — scroll effect and post filtering
+- `index.html` — page structure, navigation, filters, and sample cards
+- `style.css` — layout, responsive styles, focus states, and card appearance
+- `script.js` — category filtering and the scroll-aware header
 - `assets/` — images used by the page
 
-## Ideas for the next pass
+## Next steps
 
-The most useful next improvements would be real article pages, working navigation for account links, and a simple content source so new posts don't need to be copied into the HTML by hand.
+If I continue this project, I'd first add real article pages and a simple way to manage post content, then decide whether sign-in is needed. Until then, this stays a small static front-end project with no account features to maintain.
